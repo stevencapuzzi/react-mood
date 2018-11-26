@@ -14,6 +14,9 @@ class Home extends Component{
       <Router>
       <div>
         <ul>
+        <li>
+            <Link to="/">Home</Link>
+          </li>
           <li>
             <Link to="/Guilty">Guilty</Link>
           </li>
@@ -26,7 +29,7 @@ class Home extends Component{
         </ul>
 
         <hr />
-
+        <Route exact path="/" />
         <Route exact path="/Guilty" component={Guilty} />
         <Route path="/Happy" component={Happy} />
         <Route path="/Sleepy" component={Sleepy} />
